@@ -9,8 +9,14 @@ function setTextInputById(inputElement,newValue){
     textElements.value=newValue;
 
 }
-function updateCaseTotalNumber(newInputItems){
+function updatePhoneTotalNumber(newInputItems){
     const newTotalPrice=newInputItems * 1219;
     const newTotalPriceElements=document.getElementById('total-price');
+    newTotalPriceElements.innerText=newTotalPrice;
+}
+
+function updateCaseTotalNumber(newInputItems){
+    const newTotalPrice=newInputItems * 59;
+    const newTotalPriceElements=document.getElementById('total-case-price');
     newTotalPriceElements.innerText=newTotalPrice;
 }

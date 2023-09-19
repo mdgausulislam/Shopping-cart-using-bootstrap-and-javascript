@@ -1,8 +1,8 @@
-document.getElementById('btn-plus').addEventListener('click',function(){
+document.getElementById('case-btn-plus').addEventListener('click',function(){
     // console.log('click plus');
-    const previousInputItems=inputFieldValueById('input-field');
+    const previousInputItems=inputFieldValueById('case-input-field');
     const newInputItems= previousInputItems+1;
-    setTextInputById('input-field',newInputItems);
+    setTextInputById('case-input-field',newInputItems);
     updateCaseTotalNumber(newInputItems)
 
     // const inputField=document.getElementById('input-field');
@@ -12,9 +12,9 @@ document.getElementById('btn-plus').addEventListener('click',function(){
     //     inputField.innerText=newInputItems;
 })
 
-document.getElementById('btn-minus').addEventListener('click',function(){
-    const previousInputItems=inputFieldValueById('input-field');
+document.getElementById('case-btn-minus').addEventListener('click',function(){
+    const previousInputItems=inputFieldValueById('case-input-field');
     const newInputItems= previousInputItems-1;
-    setTextInputById('input-field',newInputItems);  
+    setTextInputById('case-input-field',newInputItems);  
     updateCaseTotalNumber(newInputItems);
 })
