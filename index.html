@@ -12,7 +12,6 @@
 </head>
 
 <body>
-
    <section>
       <div class="container">
          <h2>My shopping cart</h2>
@@ -28,8 +27,8 @@
                      <div class="col-md-5 center-item">
                         <div class="input-group number-spinner">
                            <button class="btn btn-default"><i class="fas fa-minus"></i></button>
-                           <input type="number" min="0" class="form-control text-center" value="1">
-                           <button class="btn btn-default"><i class="fas fa-plus"></i></button>
+                           <input id="input-field" type="number" min="0" class="form-control text-center" value="1">
+                           <button id="btn-plus" class="btn btn-default"><i class="fas fa-plus"></i></button>
                         </div>
                         <h5>$1219</h5>
                         <img src="images/remove.png" alt="" class="remove-item">
@@ -79,6 +78,8 @@
          </div>
       </div>
    </section>
+   <script src="js/utilities.js"></script>
+   <script src="js/script.js"></script>
 </body>
 
 </html>
